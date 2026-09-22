@@ -1,0 +1,379 @@
+{
+  "generatedAt": "2026-09-21T14:13:15.958Z",
+  "widths": [
+    240,
+    480,
+    960,
+    1600
+  ],
+  "photos": {
+    "cafe-balcony-2": {
+      "slug": "cafe-balcony-2",
+      "hash": "43ae4a64b482c1d9",
+      "width": 2064,
+      "height": 1548,
+      "aspectRatio": 1.3333,
+      "orientation": "landscape",
+      "base": "/photos/opt/cafe-balcony-2",
+      "variants": {
+        "240": "/photos/opt/cafe-balcony-2-240.webp",
+        "480": "/photos/opt/cafe-balcony-2-480.webp",
+        "960": "/photos/opt/cafe-balcony-2-960.webp",
+        "1600": "/photos/opt/cafe-balcony-2-1600.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAAAwAgCdASoQAAwAAwBWJZACdH8AEMfIUj09AAD+fft21X1OtmmEu59TGMcb+CPEM3381I4h3lY9KlbiRRIiAAAA"
+    },
+    "cafe-balcony": {
+      "slug": "cafe-balcony",
+      "hash": "209ed39729c5dffe",
+      "width": 2064,
+      "height": 1548,
+      "aspectRatio": 1.3333,
+      "orientation": "landscape",
+      "base": "/photos/opt/cafe-balcony",
+      "variants": {
+        "240": "/photos/opt/cafe-balcony-240.webp",
+        "480": "/photos/opt/cafe-balcony-480.webp",
+        "960": "/photos/opt/cafe-balcony-960.webp",
+        "1600": "/photos/opt/cafe-balcony-1600.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAABQAgCdASoQAAwAAwBWJYgCdH8AFxs+4THq+WAA/oRSS/987VUczSpgajzbPDCrA3eKsYE4JsDHUceEB4kePmiegAA="
+    },
+    "car-sunset-2": {
+      "slug": "car-sunset-2",
+      "hash": "6fc32738968e1e86",
+      "width": 1032,
+      "height": 774,
+      "aspectRatio": 1.3333,
+      "orientation": "landscape",
+      "base": "/photos/opt/car-sunset-2",
+      "variants": {
+        "240": "/photos/opt/car-sunset-2-240.webp",
+        "480": "/photos/opt/car-sunset-2-480.webp",
+        "960": "/photos/opt/car-sunset-2-960.webp",
+        "1600": "/photos/opt/car-sunset-2-1600.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAQAgCdASoQAAwAAwBWJZACdADHZjUyHDKAAP7p2PWVeYXw/PQdFJmD6Y5p/cmKHK0CKE2RhQOsY6hwEZYIXsHrHsrbAwztPOAAAA=="
+    },
+    "car-sunset": {
+      "slug": "car-sunset",
+      "hash": "156c4b217c2dc1d0",
+      "width": 2064,
+      "height": 1548,
+      "aspectRatio": 1.3333,
+      "orientation": "landscape",
+      "base": "/photos/opt/car-sunset",
+      "variants": {
+        "240": "/photos/opt/car-sunset-240.webp",
+        "480": "/photos/opt/car-sunset-480.webp",
+        "960": "/photos/opt/car-sunset-960.webp",
+        "1600": "/photos/opt/car-sunset-1600.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAAAQAgCdASoQAAwAAwBWJZgCdAEHOF76uCYAAP7vcTdus9AxJpo5/1+ldJj1ltIV9oEck2mB0AcvwwMk24ZCTU/r29AAAA=="
+    },
+    "chalet-deck-2": {
+      "slug": "chalet-deck-2",
+      "hash": "a875caa8f8e9055f",
+      "width": 810,
+      "height": 1080,
+      "aspectRatio": 0.75,
+      "orientation": "portrait",
+      "base": "/photos/opt/chalet-deck-2",
+      "variants": {
+        "240": "/photos/opt/chalet-deck-2-240.webp",
+        "480": "/photos/opt/chalet-deck-2-480.webp",
+        "960": "/photos/opt/chalet-deck-2-960.webp",
+        "1600": "/photos/opt/chalet-deck-2-1600.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADQAwCdASoQABUAPulgqE0pJaQiMAgBIB0JZgCdMoACPFqaC6A+WkAA/mZ4a5ejUqtfpSxhoZFeg1qLKn0yzAteAJzN5Yw6/UEEuUPAsCYOsGuG/Gc22QI9XML4ojYqXsgAAA=="
+    },
+    "chalet-deck": {
+      "slug": "chalet-deck",
+      "hash": "154a10202854cbba",
+      "width": 810,
+      "height": 1080,
+      "aspectRatio": 0.75,
+      "orientation": "portrait",
+      "base": "/photos/opt/chalet-deck",
+      "variants": {
+        "240": "/photos/opt/chalet-deck-240.webp",
+        "480": "/photos/opt/chalet-deck-480.webp",
+        "960": "/photos/opt/chalet-deck-960.webp",
+        "1600": "/photos/opt/chalet-deck-1600.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAACwAwCdASoQABUAPuleqE0pJSOiMAgBIB0JZgCdMoACPFtqG7UtEAD+Znhrl6NSq1+lLGGhkV6DWosqH0DA7lia999cEiDJMqxVhRq93NrEbifQDEvXeXVGt8KylP+hwAA="
+    },
+    "chalet-railing": {
+      "slug": "chalet-railing",
+      "hash": "bba0253da6a62c05",
+      "width": 810,
+      "height": 1080,
+      "aspectRatio": 0.75,
+      "orientation": "portrait",
+      "base": "/photos/opt/chalet-railing",
+      "variants": {
+        "240": "/photos/opt/chalet-railing-240.webp",
+        "480": "/photos/opt/chalet-railing-480.webp",
+        "960": "/photos/opt/chalet-railing-960.webp",
+        "1600": "/photos/opt/chalet-railing-1600.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADQAwCdASoQABUAPuleqE0pJSQiMAgBIB0JagCdB3gAPMHAEG6XqdAA9pkiV6yuy/h9YmZW21sIs/Xe9MIOUxO8UPaY72F1gZItsZGsvN5vkxUMJKM99UGywCcfLjGQHZgAAA=="
+    },
+    "chalet-shoulder": {
+      "slug": "chalet-shoulder",
+      "hash": "fd7f6ade1521cbe1",
+      "width": 810,
+      "height": 1080,
+      "aspectRatio": 0.75,
+      "orientation": "portrait",
+      "base": "/photos/opt/chalet-shoulder",
+      "variants": {
+        "240": "/photos/opt/chalet-shoulder-240.webp",
+        "480": "/photos/opt/chalet-shoulder-480.webp",
+        "960": "/photos/opt/chalet-shoulder-960.webp",
+        "1600": "/photos/opt/chalet-shoulder-1600.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAABQBACdASoQABUAPulgqE0pJaOiMAgBIB0JbACdMoR3ACHTOfnLTo2au/cAAM4rUAS6MgIQBd/PngoM7OveNxxbau98uPLmeXhkbwRvddKQvLAkyUZL3B8AjxLKzWN46PcHQIAA"
+    },
+    "engagement-ring": {
+      "slug": "engagement-ring",
+      "hash": "3d38805cd1a5c762",
+      "width": 2064,
+      "height": 1548,
+      "aspectRatio": 1.3333,
+      "orientation": "landscape",
+      "base": "/photos/opt/engagement-ring",
+      "variants": {
+        "240": "/photos/opt/engagement-ring-240.webp",
+        "480": "/photos/opt/engagement-ring-480.webp",
+        "960": "/photos/opt/engagement-ring-960.webp",
+        "1600": "/photos/opt/engagement-ring-1600.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoQAAwAAwBWJYwCdACzPP7tOAAA/rWqE4+hu/PaPDddnrqTd03dxLPqlaVvLyp9jUkVBGlyv1bGGV/gAAA="
+    },
+    "engagement-selfie": {
+      "slug": "engagement-selfie",
+      "hash": "a70865c53c4c7e85",
+      "width": 2064,
+      "height": 1548,
+      "aspectRatio": 1.3333,
+      "orientation": "landscape",
+      "base": "/photos/opt/engagement-selfie",
+      "variants": {
+        "240": "/photos/opt/engagement-selfie-240.webp",
+        "480": "/photos/opt/engagement-selfie-480.webp",
+        "960": "/photos/opt/engagement-selfie-960.webp",
+        "1600": "/photos/opt/engagement-selfie-1600.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAwAAwBWJZQCdACvqc5AteAA/ugXFZ6zwseR13bCyroOT8Yvyt3laz9FFe4H6x8YdrztmkvJGYUBKSzyFl8gAAA="
+    },
+    "gift-iphone": {
+      "slug": "gift-iphone",
+      "hash": "bcc12d4d364f2d5e",
+      "width": 2944,
+      "height": 3460,
+      "aspectRatio": 0.8509,
+      "orientation": "portrait",
+      "base": "/photos/opt/gift-iphone",
+      "variants": {
+        "240": "/photos/opt/gift-iphone-240.webp",
+        "480": "/photos/opt/gift-iphone-480.webp",
+        "960": "/photos/opt/gift-iphone-960.webp",
+        "1600": "/photos/opt/gift-iphone-1600.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRlIBAABXRUJQVlA4WAoAAAAQAAAADwAAEgAAQUxQSLcAAAANgFvbtmpl7fsFd3eLSamCcumBCiD+7u6+v9cQERMQPr+/YqDI8Pfnz4ajs8NgeaZd1Ur9mXYOdyTb0buHWClTxgIQ4frjeadXB0ushsPbh7OoWRWr4WAXDGKtPCmmsQPrrVa2gEHrmOarMba0Wpnp/jZM85X9sIXVzowPtAWzQmUvCOR13ezwUCDLGCiVd4LAYIRmxfaxBK18zY4en81a8Sjg/H9yInb3ObvXSi1RnGg67EVuowAAVlA4IHQAAABQBACdASoQABMAPulgqE2pJaOiMAgBIB0JaQAD4Wn2wuo5f5x/ntQ0QN4AAP7FGN0xyE6lty8ljMy1ya+t9W55iaLZPwosKGIaO1+b1XtuRnky+Iugf68Mcq6uXzDHDI4bJlEMMXH56b8Vqd2LmEHVmuAAAA=="
+    },
+    "home-formal": {
+      "slug": "home-formal",
+      "hash": "4f096db8cef7736c",
+      "width": 809,
+      "height": 1080,
+      "aspectRatio": 0.7491,
+      "orientation": "portrait",
+      "base": "/photos/opt/home-formal",
+      "variants": {
+        "240": "/photos/opt/home-formal-240.webp",
+        "480": "/photos/opt/home-formal-480.webp",
+        "960": "/photos/opt/home-formal-960.webp",
+        "1600": "/photos/opt/home-formal-1600.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADwAwCdASoQABUAPulgqE0pJaOiMAgBIB0JQBOmUI7gBH0/W5x1HXDgAM2Sh8W6fyEVOfzRJMh+OMlxBFhcySQmZtGhfeefE9LtPcPXYZRTZ9Oi0uNTmmXsiJwYbuxFPqpwgM6rAAA="
+    },
+    "illustration": {
+      "slug": "illustration",
+      "hash": "2c74b7562da23306",
+      "width": 958,
+      "height": 1280,
+      "aspectRatio": 0.7484,
+      "orientation": "portrait",
+      "base": "/photos/opt/illustration",
+      "variants": {
+        "240": "/photos/opt/illustration-240.webp",
+        "480": "/photos/opt/illustration-480.webp",
+        "960": "/photos/opt/illustration-960.webp",
+        "1600": "/photos/opt/illustration-1600.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAACQBACdASoQABYAPuleqE0pJSQiMAgBIB0JZgCdLwG4AClD8BPgq8ECzPQUk3gA/vEPkPGf5tMffFjrZAKQs1ttKMpPyuD30bD4nrZ28ZnxZvBrOvTx9Q1C920rO0YnJLcBILI7SBwPGCAAAAA="
+    },
+    "katb-kitab-book": {
+      "slug": "katb-kitab-book",
+      "hash": "afa07fa1c722fff5",
+      "width": 1296,
+      "height": 2304,
+      "aspectRatio": 0.5625,
+      "orientation": "portrait",
+      "base": "/photos/opt/katb-kitab-book",
+      "variants": {
+        "240": "/photos/opt/katb-kitab-book-240.webp",
+        "480": "/photos/opt/katb-kitab-book-480.webp",
+        "960": "/photos/opt/katb-kitab-book-960.webp",
+        "1600": "/photos/opt/katb-kitab-book-1600.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAACQBACdASoQABwAPuliqE2pJaOiMAgBIB0JQBOmUABR1JyjAJ/7dae7+6DlkwAAzcBx/t+qcacoz7vxs3FfcHmp+PauDXkWvjOB7PWBv9PclBLy/pfMbfmdLSi0iimCRQ1f+EdL5TBz6nsSLQ8LGsnawAA="
+    },
+    "katb-kitab-embrace": {
+      "slug": "katb-kitab-embrace",
+      "hash": "464076a93b3c2b20",
+      "width": 1296,
+      "height": 2304,
+      "aspectRatio": 0.5625,
+      "orientation": "portrait",
+      "base": "/photos/opt/katb-kitab-embrace",
+      "variants": {
+        "240": "/photos/opt/katb-kitab-embrace-240.webp",
+        "480": "/photos/opt/katb-kitab-embrace-480.webp",
+        "960": "/photos/opt/katb-kitab-embrace-960.webp",
+        "1600": "/photos/opt/katb-kitab-embrace-1600.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAACwAwCdASoQABwAPulgqE0pJaQiMAgBIB0JQBOgA69usZ8qKed+gADNvpRGS6MEmBQsez99RZpeJ0sKxa0PAolTvs94DVbRb3QMGxcJqf8iIBZg7HtJefjgP3BmklAJft6u+wNl+8T5D2u4lc3LthMTuhtB7jHudkLrMmISFAA="
+    },
+    "katb-kitab-family": {
+      "slug": "katb-kitab-family",
+      "hash": "af3973d59f19f7ad",
+      "width": 2304,
+      "height": 1296,
+      "aspectRatio": 1.7778,
+      "orientation": "landscape",
+      "base": "/photos/opt/katb-kitab-family",
+      "variants": {
+        "240": "/photos/opt/katb-kitab-family-240.webp",
+        "480": "/photos/opt/katb-kitab-family-480.webp",
+        "960": "/photos/opt/katb-kitab-family-960.webp",
+        "1600": "/photos/opt/katb-kitab-family-1600.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAACwAQCdASoQAAkAAwBWJYgCdADB1CsAAMyM0te/XZUb9I/m0W8QMKIHa7EhLc2PJ4PEk8y2IUMJcAzRTjJEAAAA"
+    },
+    "katb-kitab-kiss": {
+      "slug": "katb-kitab-kiss",
+      "hash": "77684928769444cf",
+      "width": 656,
+      "height": 1278,
+      "aspectRatio": 0.5133,
+      "orientation": "portrait",
+      "base": "/photos/opt/katb-kitab-kiss",
+      "variants": {
+        "240": "/photos/opt/katb-kitab-kiss-240.webp",
+        "480": "/photos/opt/katb-kitab-kiss-480.webp",
+        "960": "/photos/opt/katb-kitab-kiss-960.webp",
+        "1600": "/photos/opt/katb-kitab-kiss-1600.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAABwBACdASoQAB8APulgqE0pJaQiMAgBIB0JQBOl65ywAUY/zHHRwEpqptNUAAD+W6NemnA0g30idn/FVxfLldvhy+gTwSJYeCVNn8KIGYb+oMAd6TTyU/7JrmN6UjrwqTcdofqPOH2GCbSntzvMpvt6lGK0+peO8MXfUzjvs8nw7bcxFaoAAA=="
+    },
+    "katb-kitab-roses": {
+      "slug": "katb-kitab-roses",
+      "hash": "24445aff9aa3bf4b",
+      "width": 607,
+      "height": 1080,
+      "aspectRatio": 0.562,
+      "orientation": "portrait",
+      "base": "/photos/opt/katb-kitab-roses",
+      "variants": {
+        "240": "/photos/opt/katb-kitab-roses-240.webp",
+        "480": "/photos/opt/katb-kitab-roses-480.webp",
+        "960": "/photos/opt/katb-kitab-roses-960.webp",
+        "1600": "/photos/opt/katb-kitab-roses-1600.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAAAwBACdASoQAB0APulgqE0pJaQiMAgBIB0JQBOmUABlPIhoSWrr9zwS4YAA/mLfN8dpZ1lz5de0eoKRUXJPCGiT/apqjynI2j4v3HarjEa7MggmBPiv7ZuOUrhiKt0lEkAV+zPbnxus7ENfFvX7A1DBIODhar6iOBaXe3+dCIQdca05IeoGAAAA"
+    },
+    "mirror-selfie": {
+      "slug": "mirror-selfie",
+      "hash": "7f50ef61ceab0f98",
+      "width": 540,
+      "height": 960,
+      "aspectRatio": 0.5625,
+      "orientation": "portrait",
+      "base": "/photos/opt/mirror-selfie",
+      "variants": {
+        "240": "/photos/opt/mirror-selfie-240.webp",
+        "480": "/photos/opt/mirror-selfie-480.webp",
+        "960": "/photos/opt/mirror-selfie-960.webp",
+        "1600": "/photos/opt/mirror-selfie-1600.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAwBACdASoQAB0APuluq08pJyQiMAgBIB0JZACdIIjCUoJBcwNak2NGMyAA/t6XNHI+LL5zBmiwN66QPSvEzCvZGw/lKRKYQ0l54FJcBPF+Q+zH0FVa3jXVtexv6GafSabLuVhSZj3045kGwkAAAA=="
+    },
+    "mountain-selfie": {
+      "slug": "mountain-selfie",
+      "hash": "b9ab1ceaa7cae5ec",
+      "width": 1080,
+      "height": 810,
+      "aspectRatio": 1.3333,
+      "orientation": "landscape",
+      "base": "/photos/opt/mountain-selfie",
+      "variants": {
+        "240": "/photos/opt/mountain-selfie-240.webp",
+        "480": "/photos/opt/mountain-selfie-480.webp",
+        "960": "/photos/opt/mountain-selfie-960.webp",
+        "1600": "/photos/opt/mountain-selfie-1600.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAwAAwBWJaACdAC1no6MgAD+88Lacm8nHSwlPCdmNVPB5BQwQ2ZSt4WoDkvLEgdJSYbmh9353R40SwBAAA=="
+    },
+    "mountain-table": {
+      "slug": "mountain-table",
+      "hash": "9222d3e56d09c6dc",
+      "width": 810,
+      "height": 1080,
+      "aspectRatio": 0.75,
+      "orientation": "portrait",
+      "base": "/photos/opt/mountain-table",
+      "variants": {
+        "240": "/photos/opt/mountain-table-240.webp",
+        "480": "/photos/opt/mountain-table-480.webp",
+        "960": "/photos/opt/mountain-table-960.webp",
+        "1600": "/photos/opt/mountain-table-1600.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAACwAwCdASoQABUAPuleqE0pJSQiMAgBIB0JagCdABiD2tFRJreBAAD+05CaeQOFpeu/I8G0aoqqHXvxIZVG6iZ7bXKwCRo60pJlOqyylHnCZJ4iHgarufcUUEJUb80k5qSAfl1AvgPh7ZhCtAA="
+    },
+    "night-street": {
+      "slug": "night-street",
+      "hash": "b944a880a137cc13",
+      "width": 1548,
+      "height": 2064,
+      "aspectRatio": 0.75,
+      "orientation": "portrait",
+      "base": "/photos/opt/night-street",
+      "variants": {
+        "240": "/photos/opt/night-street-240.webp",
+        "480": "/photos/opt/night-street-480.webp",
+        "960": "/photos/opt/night-street-960.webp",
+        "1600": "/photos/opt/night-street-1600.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAwCdASoQABUAPulep00pJSOiMAgBIB0JYgCdACHwh347Z6+rr43gAP7r5M9Ay80blAAdjEAGgfPxB6m7l8O7pREapA+tMBZJc6NFmRqTjeTyBZdsBzlzGvJAAA=="
+    },
+    "qasioun-night": {
+      "slug": "qasioun-night",
+      "hash": "e54509378c58bb02",
+      "width": 540,
+      "height": 900,
+      "aspectRatio": 0.6,
+      "orientation": "portrait",
+      "base": "/photos/opt/qasioun-night",
+      "variants": {
+        "240": "/photos/opt/qasioun-night-240.webp",
+        "480": "/photos/opt/qasioun-night-480.webp",
+        "960": "/photos/opt/qasioun-night-960.webp",
+        "1600": "/photos/opt/qasioun-night-1600.webp"
+      },
+      "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACwAwCdASoQABsAPulkqU4pJaQiMAgBIB0JZQC2yGlfwGECccgAAAD+/Znfl3ES8iHyRtJ4/UD95wNl/CMW19TekJcFYAAA"
+    }
+  }
+}

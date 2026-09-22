@@ -1,0 +1,712 @@
+@import 'tailwindcss';
+
+/* ==========================================================================
+   هوية "التوت البرّي" — Blueberry
+   لبّ داكن بنفسجي، قشرة تقارب السواد، وزَغَب فضّي شاحب على السطح.
+
+   لغة التصميم: تناظرٌ تحريري. كل قسم يبدأ من المنتصف بالترتيب نفسه —
+   سطرٌ صغير، ثم زخرفة، ثم عنوان، ثم نصّ. الفخامة هنا من الانضباط
+   والفراغ، لا من كثرة العناصر.
+   ========================================================================== */
+
+@theme {
+  --color-bb-ink: #0a0918;
+  --color-bb-midnight: #12102b;
+  --color-bb-surface: #1c1840;
+  --color-bb-surface-2: #272052;
+  --color-bb-berry: #4b3ba8;
+  --color-bb-berry-lit: #6a56d4;
+  --color-bb-bloom: #a99bf2;
+  --color-bb-frost: #d6ceff;
+  --color-bb-text: #f2efff;
+  --color-bb-text-muted: #a69fcb;
+  --color-bb-silver: #d9dae4;
+
+  /* تجوّل وحده — عناوين ونصًّا وأرقامًا */
+  --font-display: var(--font-latin), var(--font-arabic), ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-latin), var(--font-arabic), ui-sans-serif, system-ui, sans-serif;
+
+  --radius-bb: 1rem;
+  --radius-bb-lg: 1.5rem;
+  --radius-bb-xl: 2rem;
+
+  --ease-bb: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+:root {
+  --bb-ink: var(--color-bb-ink);
+  --bb-midnight: var(--color-bb-midnight);
+  --bb-surface: var(--color-bb-surface);
+  --bb-surface-2: var(--color-bb-surface-2);
+  --bb-berry: var(--color-bb-berry);
+  --bb-berry-lit: var(--color-bb-berry-lit);
+  --bb-bloom: var(--color-bb-bloom);
+  --bb-frost: var(--color-bb-frost);
+  --bb-text: var(--color-bb-text);
+  --bb-text-muted: var(--color-bb-text-muted);
+  --bb-silver: var(--color-bb-silver);
+
+  --bb-hairline: rgba(214, 206, 255, 0.1);
+  --bb-hairline-strong: rgba(214, 206, 255, 0.2);
+
+  color-scheme: dark;
+}
+
+/* ==========================================================================
+   الأساسيات
+   ========================================================================== */
+
+@layer base {
+  * {
+    min-inline-size: 0;
+  }
+
+  html {
+    background-color: var(--bb-ink);
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--bb-ink);
+    color: var(--bb-text);
+    font-family: var(--font-body);
+    line-height: 1.85; /* ارتفاع سطر مريح للعربية */
+    font-weight: 400;
+    overflow-x: clip;
+    /* العربية تنكسر حروفها مع تباعد الأحرف — ممنوع منعًا باتًا */
+    letter-spacing: normal;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--bb-bloom);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  ::selection {
+    background-color: color-mix(in oklab, var(--bb-berry-lit) 60%, transparent);
+    color: var(--bb-text);
+  }
+
+  button,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  input,
+  button,
+  select,
+  textarea {
+    font: inherit;
+  }
+}
+
+/* ==========================================================================
+   الإيقاع: كل قسم بالمسافات نفسها، وكل محتوى بالعرض نفسه
+   ========================================================================== */
+
+@layer components {
+  .bb-section {
+    position: relative;
+    padding-block: clamp(5.5rem, 13vw, 9.5rem);
+    padding-inline: max(1.25rem, env(safe-area-inset-left), env(safe-area-inset-right));
+  }
+
+  .bb-container {
+    margin-inline: auto;
+    inline-size: 100%;
+    max-inline-size: 64rem;
+  }
+
+  .bb-container-wide {
+    margin-inline: auto;
+    inline-size: 100%;
+    max-inline-size: 74rem;
+  }
+
+  /* ==========================================================================
+     طبقات الجوّ
+     ========================================================================== */
+
+  .bb-grain {
+    position: fixed;
+    inset: 0;
+    z-index: 60;
+    pointer-events: none;
+    opacity: 0.03;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-size: 160px 160px;
+  }
+
+  .bb-vignette {
+    position: fixed;
+    inset: 0;
+    z-index: 55;
+    pointer-events: none;
+    background: radial-gradient(125% 90% at 50% 38%, transparent 40%, rgba(10, 9, 24, 0.68) 100%);
+  }
+
+  /**
+   * الشفق — كتلتان ضوئيتان فقط، هادئتان وبطيئتان.
+   * قلّلناهما من أربع إلى اثنتين ورفعنا زمنهما: الخلفية المضطربة تُشتّت،
+   * والفخامة سكون لا حركة.
+   */
+  .bb-aurora {
+    position: fixed;
+    inset: -20%;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+
+  /* الضبابية على كل كتلة لا على الحاوية، حتى تبقى طبقة مستقلّة تنزلق فقط */
+  .bb-aurora span {
+    position: absolute;
+    display: block;
+    border-radius: 9999px;
+    filter: blur(70px);
+    will-change: transform;
+  }
+
+  .bb-aurora span:nth-child(1) {
+    inline-size: 52vmax;
+    block-size: 52vmax;
+    inset-block-start: -10%;
+    inset-inline-start: -12%;
+    opacity: 0.32;
+    background: radial-gradient(circle, var(--bb-berry) 0%, transparent 68%);
+    animation: bb-float-a 52s ease-in-out infinite;
+  }
+
+  .bb-aurora span:nth-child(2) {
+    inline-size: 44vmax;
+    block-size: 44vmax;
+    inset-block-end: -8%;
+    inset-inline-end: -10%;
+    opacity: 0.26;
+    background: radial-gradient(circle, var(--bb-berry-lit) 0%, transparent 70%);
+    animation: bb-float-b 64s ease-in-out infinite;
+  }
+
+  /* خلفيات الأقسام */
+  .bb-ground-ink {
+    background-color: var(--bb-ink);
+  }
+
+  .bb-ground-rise {
+    background-image: linear-gradient(to bottom, transparent 0%, var(--bb-ink) 65%);
+  }
+
+  .bb-translucent {
+    background-color: color-mix(in oklab, var(--bb-ink) 76%, transparent);
+  }
+
+  /* ==========================================================================
+     الإطار المزدوج — أهم عنصر في الإحساس بالفخامة
+     حدٌّ خارجي رفيع، وحدٌّ داخلي أرفع يبعد عنه قليلًا.
+     ========================================================================== */
+
+  .bb-frame {
+    position: relative;
+    border: 1px solid var(--bb-hairline-strong);
+    border-radius: var(--radius-bb-lg);
+    background: linear-gradient(
+      165deg,
+      color-mix(in oklab, var(--bb-surface) 55%, transparent),
+      color-mix(in oklab, var(--bb-ink) 65%, transparent)
+    );
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  .bb-frame::after {
+    content: '';
+    position: absolute;
+    inset: 7px;
+    border: 1px solid var(--bb-hairline);
+    border-radius: calc(var(--radius-bb-lg) - 7px);
+    pointer-events: none;
+  }
+
+  /* لوح زجاجي بلا إطار داخلي — للبطاقات الصغيرة */
+  .bb-glass {
+    position: relative;
+    border-radius: var(--radius-bb-lg);
+    border: 1px solid var(--bb-hairline);
+    background: linear-gradient(
+      165deg,
+      color-mix(in oklab, var(--bb-surface) 70%, transparent),
+      color-mix(in oklab, var(--bb-ink) 70%, transparent)
+    );
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .bb-hairline {
+    border: 1px solid var(--bb-hairline);
+  }
+
+  .bb-bloom-glow {
+    position: absolute;
+    border-radius: 9999px;
+    pointer-events: none;
+    filter: blur(60px);
+    background: radial-gradient(
+      circle,
+      color-mix(in oklab, var(--bb-berry) 70%, transparent) 0%,
+      transparent 70%
+    );
+  }
+
+  /* خطٌّ رفيع يتلاشى من الطرفين — يُستخدم تحت كل ترويسة */
+  .bb-rule {
+    display: block;
+    block-size: 1px;
+    background: linear-gradient(
+      to left,
+      transparent,
+      var(--bb-hairline-strong) 35%,
+      var(--bb-hairline-strong) 65%,
+      transparent
+    );
+  }
+
+  /* الخطّ الرأسي للمسار الزمني */
+  .bb-spine {
+    position: absolute;
+    inset-block: 0;
+    inline-size: 1px;
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      var(--bb-hairline-strong) 8%,
+      var(--bb-hairline-strong) 92%,
+      transparent
+    );
+  }
+
+  .bb-touch {
+    min-block-size: 44px;
+    min-inline-size: 44px;
+  }
+
+  .bb-safe-bottom {
+    padding-block-end: env(safe-area-inset-bottom);
+  }
+}
+
+@layer utilities {
+  /* نصّ بتدرّج لوني — للعناوين الكبرى فقط */
+  .bb-gradient-text {
+    background-image: linear-gradient(
+      170deg,
+      var(--bb-text) 0%,
+      var(--bb-frost) 50%,
+      var(--bb-bloom) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .bb-scroll-locked {
+    overflow: hidden;
+    touch-action: none;
+  }
+}
+
+/* ==========================================================================
+   ظهور الاسم في الافتتاح
+
+   ملاحظة مهمة عن العربية: تقسيم الاسم إلى حرف لكل عنصر <span> يكسر اتصال
+   الحروف (تصبح "غ ا ل ي ة"). لذلك نُبقي الاسم نصًا واحدًا ونكشفه بتدرّج
+   لوني متحرّك من اليمين إلى اليسار — فيظهر حرفًا بعد حرف من دون أي مساس
+   بالرسم العربي.
+   ========================================================================== */
+
+.bb-name {
+  color: var(--bb-frost);
+}
+
+@keyframes bb-ghost-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.4;
+  }
+}
+
+.bb-name-ghost {
+  color: var(--bb-frost);
+  animation: bb-ghost-in 1500ms var(--ease-bb) 2350ms both;
+}
+
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  @property --bb-wipe {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 0%;
+  }
+
+  @keyframes bb-name-wipe {
+    from {
+      --bb-wipe: 0%;
+    }
+    to {
+      --bb-wipe: 115%;
+    }
+  }
+
+  .bb-name {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(
+      to left,
+      var(--bb-frost) 0%,
+      var(--bb-frost) var(--bb-wipe),
+      color-mix(in oklab, var(--bb-frost) 30%, transparent) calc(var(--bb-wipe) + 5%),
+      transparent calc(var(--bb-wipe) + 13%)
+    );
+    animation: bb-name-wipe 2100ms var(--ease-bb) 400ms both;
+  }
+}
+
+/* ==========================================================================
+   كشف النصّ كلمةً كلمة
+   التقسيم عند المسافات آمن تمامًا في العربية (عكس تقسيم الحروف).
+   ========================================================================== */
+
+.bb-words {
+  display: inline;
+}
+
+.bb-word {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(0.5em);
+  filter: blur(5px);
+  animation: bb-word-in 900ms var(--ease-bb) both;
+  animation-delay: calc(var(--bb-base, 0ms) + var(--i, 0) * 60ms);
+}
+
+/**
+ * القاعدة تفشل إلى الأمان: الكلمات تتحرّك افتراضيًا ولا تتوقّف إلا داخل
+ * غلاف ظهورٍ لم يدخل الشاشة بعد. لو عكسنا الشرط لاختفى أي عنوان لا يصادف
+ * أن يكون داخل Appear.
+ */
+[data-visible='false'] .bb-word {
+  animation-play-state: paused;
+}
+
+@keyframes bb-word-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+/* ==========================================================================
+   الظهور عند التمرير — CSS خالص يقوده مراقب تقاطع واحد مشترك
+   ========================================================================== */
+
+.bb-appear {
+  opacity: 0;
+  transform: translateY(var(--bb-rise, 26px)) scale(var(--bb-start-scale, 1));
+  filter: blur(var(--bb-start-blur, 0px));
+  transition:
+    opacity 950ms var(--ease-bb) var(--bb-delay, 0ms),
+    transform 950ms var(--ease-bb) var(--bb-delay, 0ms),
+    filter 950ms var(--ease-bb) var(--bb-delay, 0ms);
+}
+
+/* الطبقة المستقلّة تُحجز قبل الظهور فقط ثم تُحرَّر */
+.bb-appear[data-visible='false'] {
+  will-change: opacity, transform;
+}
+
+.bb-appear[data-visible='true'] {
+  opacity: 1;
+  transform: none;
+  filter: blur(0);
+}
+
+/* لو عُطّلت جافاسكربت يظهر كل شيء بلا حركة بدل أن يبقى مخفيًا */
+@media (scripting: none) {
+  .bb-appear,
+  .bb-word {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    animation: none;
+  }
+}
+
+/* ==========================================================================
+   شريط تقدّم القراءة
+   ========================================================================== */
+
+.bb-progress {
+  position: fixed;
+  inset-block-start: 0;
+  inset-inline: 0;
+  z-index: 65;
+  block-size: 2px;
+  transform-origin: right center; /* يبدأ من اليمين — اتجاه القراءة */
+  background: linear-gradient(to left, var(--bb-bloom), var(--bb-frost));
+  pointer-events: none;
+}
+
+/* ==========================================================================
+   أشعّة ضوئية — للحظة الكشف وحدها
+   ========================================================================== */
+
+.bb-rays {
+  position: absolute;
+  inset-block-start: -35%;
+  inset-inline-start: 50%;
+  inline-size: 115vmax;
+  block-size: 115vmax;
+  translate: -50% 0;
+  pointer-events: none;
+  opacity: 0;
+  will-change: transform, opacity;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    color-mix(in oklab, var(--bb-frost) 16%, transparent) 8deg,
+    transparent 16deg,
+    transparent 30deg,
+    color-mix(in oklab, var(--bb-bloom) 14%, transparent) 38deg,
+    transparent 48deg,
+    transparent 70deg,
+    color-mix(in oklab, var(--bb-frost) 12%, transparent) 78deg,
+    transparent 90deg
+  );
+  mask-image: radial-gradient(circle at 50% 30%, #000 0%, transparent 62%);
+  -webkit-mask-image: radial-gradient(circle at 50% 30%, #000 0%, transparent 62%);
+  animation:
+    bb-rays-in 2400ms var(--ease-bb) both,
+    bb-rays-spin 80s linear infinite;
+}
+
+@keyframes bb-rays-in {
+  to {
+    opacity: 0.8;
+  }
+}
+
+@keyframes bb-rays-spin {
+  to {
+    rotate: 360deg;
+  }
+}
+
+/* ==========================================================================
+   حركات صغيرة
+   ========================================================================== */
+
+@keyframes bb-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes bb-drift {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+@keyframes bb-hint-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+  50% {
+    box-shadow:
+      0 0 0 2px color-mix(in oklab, var(--bb-bloom) 70%, transparent),
+      0 0 30px 0 color-mix(in oklab, var(--bb-bloom) 40%, transparent);
+  }
+}
+
+@keyframes bb-breathe {
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.32;
+    transform: scale(1.06);
+  }
+}
+
+/* انتقال خالص بلا تحجيم: التحجيم يجبر المتصفّح على إعادة رسم الطبقة المضبّبة */
+@keyframes bb-float-a {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(6vmax, 4vmax, 0);
+  }
+}
+
+@keyframes bb-float-b {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(-7vmax, -5vmax, 0);
+  }
+}
+
+@keyframes bb-mote {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+  }
+  15%,
+  70% {
+    opacity: var(--bb-mote-opacity, 0.5);
+  }
+  100% {
+    transform: translate3d(var(--bb-mote-x, 10px), -62vh, 0);
+    opacity: 0;
+  }
+}
+
+.bb-mote {
+  position: absolute;
+  inset-block-end: -10px;
+  border-radius: 9999px;
+  background-color: var(--bb-frost);
+  animation: bb-mote var(--bb-mote-duration, 18s) linear var(--bb-mote-delay, 0s) infinite;
+  will-change: transform, opacity;
+}
+
+.bb-enter {
+  animation: bb-fade-up 1000ms var(--ease-bb) both;
+}
+
+.bb-drift {
+  animation: bb-drift 3.4s ease-in-out infinite;
+}
+
+.bb-hint {
+  animation: bb-hint-pulse 1.5s ease-in-out 3;
+}
+
+.bb-breathe {
+  animation: bb-breathe 8s ease-in-out infinite;
+}
+
+/* ==========================================================================
+   لحظة الكشف
+   ========================================================================== */
+
+@keyframes bb-confetti-fall {
+  0% {
+    transform: translate3d(0, -12vh, 0) rotate(0deg);
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(var(--bb-drift-x, 0px), 108vh, 0) rotate(var(--bb-spin, 360deg));
+    opacity: 0;
+  }
+}
+
+.bb-confetti {
+  position: absolute;
+  inset-block-start: 0;
+  inline-size: 5px;
+  block-size: 9px;
+  border-radius: 2px;
+  background-color: var(--bb-frost);
+  animation: bb-confetti-fall var(--bb-duration, 4s) cubic-bezier(0.3, 0.1, 0.5, 1)
+    var(--bb-delay, 0s) forwards;
+  will-change: transform, opacity;
+}
+
+@keyframes bb-sheen {
+  from {
+    transform: translateX(-140%) skewX(-18deg);
+  }
+  to {
+    transform: translateX(240%) skewX(-18deg);
+  }
+}
+
+.bb-sheen {
+  animation: bb-sheen 1500ms var(--ease-bb) 300ms both;
+}
+
+/* ==========================================================================
+   احترام تفضيل تقليل الحركة
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .bb-aurora,
+  .bb-mote,
+  .bb-rays {
+    display: none;
+  }
+
+  .bb-appear,
+  .bb-word {
+    filter: none;
+    transform: none;
+  }
+}
